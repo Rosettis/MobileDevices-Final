@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:stretchColumns="1"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:text="@string/testText"
+            android:visibility="invisible"/>
+    </TableRow>
+
+    <TableRow>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/txtBikeShareId"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/bikeShareId"
+            android:gravity="start"
+            android:editable="false"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/txtName"
+            android:padding="3dip" />
+        <EditText
+            android:id="@+id/nameID"
+            android:gravity="start"
+            android:padding="3dp"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/txtAddress"
+            android:padding="3dip" />
+        <EditText
+            android:id="@+id/addressID"
+            android:gravity="start"
+            android:editable="false"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/txtLatitude"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/latitudeID"
+            android:text="@string/numLatitude"
+            android:gravity="start"
+            android:editable="false"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/txtLongitude"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/longitudeID"
+            android:text="@string/numLongitude"
+            android:gravity="start"
+            android:editable="false"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/txtNumBikes"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/numBikesID"
+            android:gravity="start"
+            android:editable="false"
+            android:padding="3dp" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dp"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <Button
+            android:text="@string/txtSave"
+            android:onClick="Save"
+            android:padding="3dp" />
+        <Button
+            android:text="@string/txtShowMap"
+            android:onClick="showMap"
+            android:padding="3dp"
+            />
+    </TableRow>
+</TableLayout>
+
+    <!--<TextView android:text="@string/location"
+            android:id="@+id/lblLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText android:id="@+id/txtLocation"
+            android:layout_toRightOf="@id/lblLocation"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/btnSearch"
+            android:layout_below="@id/txtLocation"
+            android:text="@string/search"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="search" />-->
